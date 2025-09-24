@@ -1,15 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ShoppingCart,User,Heart,Search,Wine } from "lucide-react";
+import SearchBar from "./Search";
 
 export default function Header() {
   return (
     <div>
       <header className="bg-yellow-500 px-6 py-1 flex justify-end items-center gap-6 text-sm">
-        <button className="flex items-center gap-1 hover:text-gray-100">
-          <Search size={16} />
-          
-        </button>
+        <SearchBar/>
         <Link to="/wishlist" className="flex items-center gap-1 hover:text-gray-700">
           <Heart size={16} />
           

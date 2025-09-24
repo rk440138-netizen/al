@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Collection from "./pages/Collection";
 import Contact  from "./pages/Contact";
 import About from "./pages/About";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 
 export default function App() {
@@ -34,9 +36,20 @@ export default function App() {
       path: "/contact",
       element: <Contact/>
     },
+    {
+      path: "/login",
+      element: <Login/>,
+    },
+      {
+      path: "/register",
+      element: <Register/>,
+    }
+    
       ],
      
     },
+      
+    
     
   ]);
 
